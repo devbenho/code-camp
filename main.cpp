@@ -1,8 +1,15 @@
 #include <iostream>
-using namespace std;
+#include <vector>
+#include "student.h"
 
 int main()
 {
-    cout << "Welcome to The Code Camp!" << endl;
+    int NO_OF_STUDENTS = 3;
+    StudentManagement::Student students[NO_OF_STUDENTS];
+    StudentManagement::enterStudentsDetails(students, NO_OF_STUDENTS);
+    StudentManagement::displayStudentDetails(students, NO_OF_STUDENTS);
+    StudentManagement::findHighestMarks(students, NO_OF_STUDENTS);
+    StudentManagement::sortStudents(students, NO_OF_STUDENTS);
+    StudentManagement::displaySortedStudents(students, NO_OF_STUDENTS);
     return 0;
 }
