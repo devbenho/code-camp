@@ -4,6 +4,7 @@
 
 int main()
 {
+    // @abdelrahman-salama is a contributor
     int NO_OF_STUDENTS = 3;
     StudentManagement::Student students[NO_OF_STUDENTS];
     StudentManagement::enterStudentsDetails(students, NO_OF_STUDENTS);
